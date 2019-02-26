@@ -1,0 +1,30 @@
+//Created by: Khoa Le
+//Created on: Feb 14
+//This program calculates the height of the user's wooden board with the given dimensions from the user.
+
+import java.util.Scanner;
+
+public class Unit107 {
+
+	public static void main(String[] args) {
+		
+		Scanner userInput = new Scanner(System.in);
+		
+		System.out.println("Enter the length of your wooden board.");
+		
+		//Takes user input and sets it as length.
+		float boardLength = userInput.nextInt();
+		
+		System.out.println("Enter the width of your wooden board.");
+		
+		//Takes user input and sets it as width.
+		float boardWidth = userInput.nextInt();
+		
+		//Multiplies length and board and divides it by 144 to produce the height.
+		float boardHeight = (boardWidth*boardLength)/144;
+		
+		System.out.println("The height of the board is " + boardHeight + ".");
+
+	}
+
+}
